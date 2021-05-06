@@ -1,98 +1,101 @@
 
-.barFormat {
-float: right;
-height: 400px;
-}
 
-.bigLogo{
+#bigLogo{
   display: flex;
-  padding: 30px;
+  padding: 20px;
+  max-height: 50px;
+  padding-top: 10px;
   align-items: center;
   display: inline-block;
-  }
+  background-color: transparent;}
+  
 
-.socialLogos i{
+#leftHeader {
 display: flex;
-/*align-items: flex-start;
-flex-direction: column-reverse; */
+align-self: flex-start;
+} 
+
+#starwarsKids {
+  height: 4em;
+  text-decoration: none;
+  color: #999;
+  font: Helvetica, Arial, sans-serif;
+}
+
+#rightHeader {
+ align: null;
+  } 
+
+#socialLogos i{
+height: 4em;
 color:#999;
 padding-left: 10px;
 }
 
-.starwarsKids {
+
+#userAccess {
   display: flex;
-  align-items: flex-start;
-  height: 4em;
-  align-content: flex-start;
+  justify-content: right;
+  align-items: flex-end;
+  padding: 0px;
   text-decoration: none;
   color: #999;
   font-family: Helvetica, Arial, sans-serif;
 }
 
-
-.userAccess {
-  align-content: right;
-  padding: 10px;
-  text-decoration: none;
+a {
   color: #999;
-  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
 }
 
-nav{
+#navbar{
   display: flex;
-  justify-content: space-around;
-  box-sizing: border-box;
+  flex-direction: row;
+  color: #999;
   margin: 0;
   padding: 0;
-  font-size: 3.5rem;
+  font-size: 1rem;
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.nav_links {
+#nav_links {
         display: flex;
         flex-direction: row;
         text-decoration: none;
         list-style: none;
         justify-content: center;
-        border-top: 100px;
-        border-bottom: 100px;
-        margin: 0;
-        padding: 22px;
+        margin: 20px;
         border: 15px;
         border-color: #999;
-        width: 100vw;
+        width: 80vw;
         color: #999;
-      	background: #000000;
-	      height: 44px;
-	      padding-left: 18px;
+      	background: transparent;
+	      height: 34px;
+        padding-top: 20px;
+	      padding-left: 10px;
+        padding-right: 10px;
 	      border-radius: 0px;
 	      border: 2px solid #999999;
 }
-.nav_links ul, .navlinks li {
+#nav_links ul, .navlinks li {
 	margin: 0;
 	padding: 0;
 	list-style: none
 }
 
-.nav_links li {
-	float: left;
-	display: inline;
-	position: relative;
-}
-
-.nav_links label {
+#nav_links label {
 	display: none;
-	line-height: 30px;
+	line-height: 20px;
 	text-align: center;
 	position: absolute;
-	left: 35px
+	left: 5px
 }
 
-.nav_links li a:hover {
+#nav_links li a:hover {
 	color: white;
 	background: #000000;
 }
-.nav_links li a{
+#nav_links li a{
   padding: 10px;
   text-decoration: none;
   color: #999;
@@ -107,30 +110,34 @@ body{
   width: 100vw
 }
 
-.titleText {
-  height: 4em;
+
+#titleText2 {
+  height: 1em;
+  font-size: 0.8em; 
+  padding-bottom: 1em;
+  color:#999;
   text-decoration: none;
-  color: #999;
+  font-style: normal;
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.titleText2 {
-  height: 2em;
-  font-size: 2.5em; 
-  color:#999;
-  text-decoration: none;
-  font-family: Helvetica, Arial, sans-serif;
+.center_col {
+  display: flex;
 }
 
 .mural {
   object-fit: cover;
+  z-index: -1;
 }
-
 .mural2 {
-  margin-top: -550px;
-  margin-left: -1300px;
+  display: flex;
+  align-self:center;
+  position: relative;
+  justify-content: center;
+  margin-top: 200px;
+  margin-left: 500px;
+  z-index: 1;
 }
-
 
 .belowFoldMay a{
   height: 4em;
@@ -144,7 +151,6 @@ body{
   display: inline-block;
   background-color:#FFE400;
     color:#000;
-      border-color: #FFE400;
-       margin-top: 350px;
+      border-color: transparent
 }
 
